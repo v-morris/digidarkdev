@@ -1,0 +1,163 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    margin:0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #002A3A;
+  }
+
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: rgba(0, 48, 87, 0.6);
+    text-align: center;
+  }
+
+
+#devPort, #photoPort, #about {
+    position:relative;
+    padding-top:120px;
+    text-align: center;
+}
+
+#top{
+    position:relative;
+    padding-top:250px;
+    text-align: center;
+}
+
+
+#portfolio{
+    text-align: center;
+}
+
+#contact, #contact2{
+    margin-top:100px;
+}
+
+.card-title{
+    margin-bottom: 0px;
+}
+
+h1, h2, h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    color: #659AB1;
+}
+
+.display-1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+
+p, li{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #659AB1;
+}
+
+label{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #659AB1;
+}
+
+.navbar{
+    transition: .5s;
+    margin-bottom:100px;
+}
+
+.navbar ul li{
+    list-style-type:none;
+    display:inline-block;
+    color:darkgreen;
+ 
+}
+
+nav.navbar {
+    background: transparent;
+  }
+
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: #659AB1;
+}
+
+.photo{
+    padding:10px;
+}
+
+
+.card-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #659AB1;
+}
+
+.text-muted{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #659AB1;
+}
+
+.card{
+    margin-top:20px;
+    border:3px solid #4E87A0;
+   background-color:rgba(0, 48, 87, 0.5)
+}
+
+.last-card, .last-photo-row{
+    margin-bottom:50px;
+}
+
+.card-img-top{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+@keyframes tracking-in-expand{
+    0%{
+        letter-spacing:-.5em;
+        opacity:0
+      }
+      40%{
+          opacity:.6
+      }100%{
+          opacity:1
+      }
+  }
+
+  .tracking-in-expand{
+      animation:tracking-in-expand 1s cubic-bezier(.175,.885,.32,1.575) both}
+  .tracking-in-expand-1s{
+      animation:tracking-in-expand 2s cubic-bezier(.175,.885,.32,1.275) 1.2s both}
+
+
+      
+      
