@@ -37,9 +37,15 @@ html {
   }
 
 
-#devPort, #photoPort, #about {
+#devPort, #about {
     position:relative;
     padding-top:120px;
+    text-align: center;
+}
+
+#photoPort {
+    position:relative;
+    padding-top:140px;
     text-align: center;
 }
 
@@ -107,6 +113,8 @@ nav.navbar {
   color: #659AB1;
 }
 
+
+
 .photo{
     padding:10px;
 }
@@ -141,6 +149,27 @@ nav.navbar {
     margin-bottom:10px;
 }
 
+
+
+@media only screen and (max-width: 480px) {
+    .tracking-in-expand{
+        font-size: 3em;
+    }
+    .tracking-in-expand-1s{
+        font-size: 2em;  
+    }
+
+    #top{
+        position:relative;
+        padding-top:115px;
+        text-align: center;
+    }
+    #copyright{
+        font-size: 1em;
+    }
+
+}
+
 @keyframes tracking-in-expand{
     0%{
         letter-spacing:-.5em;
@@ -158,6 +187,40 @@ nav.navbar {
   .tracking-in-expand-1s{
       animation:tracking-in-expand 2s cubic-bezier(.175,.885,.32,1.275) 1.2s both}
 
+span{
+    text-shadow: 0 0 10px #002A3A;
+}
 
+      .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
       
+      /* Create four equal columns that sits next to each other */
+      .image-column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
       
+      .image-column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .image-column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+      @media screen and (max-width: 600px) {
+        .image-column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }*/
