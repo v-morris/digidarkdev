@@ -25,73 +25,7 @@ html {
     background-color: #002A3A;
   }
 
-
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background: rgba(0, 48, 87, 0.6);
-    text-align: center;
-  }
-
-
-#devPort, #about {
-    position:relative;
-    padding-top:120px;
-    text-align: center;
-}
-
-#photoPort {
-    position:relative;
-    padding-top:140px;
-    text-align: center;
-}
-
-#top{
-    position:relative;
-    padding-top:250px;
-    text-align: center;
-}
-
-
-#portfolio{
-    text-align: center;
-}
-
-#contact, #contact2{
-    margin-top:100px;
-}
-
-.card-title{
-    margin-bottom: 0px;
-}
-
-h1, h2, h3{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-    color: #659AB1;
-}
-
-.display-1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-}
-
-p, li{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #659AB1;
-}
-
-label{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    color: #659AB1;
-}
+/* NAVBAR */
 
 .navbar{
     transition: .5s;
@@ -113,18 +47,103 @@ nav.navbar {
   color: #659AB1;
 }
 
+/* TEXT */
 
-
-.photo{
-    padding:10px;
+h1, h2, h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    color: #659AB1;
 }
 
+.display-1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+
+p, li{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.45rem;
+    color: #659AB1;
+}
+
+label{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #659AB1;
+}
+
+a:hover{
+    color:white;
+    text-decoration :none;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: rgba(0, 48, 87, 0.6);
+    text-align: center;
+  }
+
+
+#devPort, #about {
+    position:relative;
+    padding-top:120px;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+}
+.left-half {
+    border:2px solid white;
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .right-half {
+    border:2px solid white;
+    flex: 1;
+    padding: 1rem;
+  }
+
+#photoPort {
+    position:relative;
+    padding-top:140px;
+    text-align: center;
+}
+
+#top{
+    position:relative;
+    padding-top:250px;
+    text-align: center;
+}
+
+#portfolio{
+    text-align: center;
+}
+
+#contact, #contact2{
+    margin-top:100px;
+}
+
+
+/* DEV PORTFOLIO CARDS */
 
 .card-text{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #659AB1;
+}
+
+.card-title{
+    margin-bottom: 0px;
+    font-size: 1.5em;
 }
 
 .text-muted{
@@ -136,20 +155,83 @@ nav.navbar {
 
 .card{
     margin-top:20px;
-    border:3px solid #4E87A0;
-   background-color:rgba(0, 48, 87, 0.5)
+    border:1.5px solid #4E87A0;
+   background-color:rgba(0, 48, 87);
+   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .last-card, .last-photo-row{
     margin-bottom:50px;
 }
 
-.card-img-top{
-    margin-top:10px;
-    margin-bottom:10px;
+hr{
+   border-color:#4E87A0; 
+   margin-bottom:0px;  
 }
 
+.devThumbs{
+    padding: 20px;
+}
 
+/* DEV PORTFOLIO TRANSITIONS */
+
+.wrap {
+    display: inline-block;
+    position: relative;
+    opacity: .4;
+  }
+  
+  .wrap {
+    display: block;
+    transition:opacity .25s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+      -o-transition: all .4s ease;
+     -ms-transition: all .4s ease;
+         transition: all .4s ease;
+  }
+  
+  .wrap:hover {
+    opacity: .9;
+
+  }
+
+  /* PHOTO PORFOLIO */
+span{
+    text-shadow: 0 0 10px #002A3A;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+      
+ /* Create four equal columns that sits next to each other */
+.image-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+      
+.image-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.photo{
+    padding:10px;
+}
+      
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .image-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* MAIN PAGE */
 
 @media only screen and (max-width: 480px) {
     .tracking-in-expand{
@@ -187,35 +269,8 @@ nav.navbar {
   .tracking-in-expand-1s{
       animation:tracking-in-expand 2s cubic-bezier(.175,.885,.32,1.275) 1.2s both}
 
-span{
-    text-shadow: 0 0 10px #002A3A;
-}
 
-      .image-row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-      }
-      
-      /* Create four equal columns that sits next to each other */
-      .image-column {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-      }
-      
-      .image-column img {
-        margin-top: 8px;
-        vertical-align: middle;
-      }
-      
-      /* Responsive layout - makes a two column-layout instead of four columns */
-      @media screen and (max-width: 800px) {
-        .image-column {
-          flex: 50%;
-          max-width: 50%;
-        }
-      }
+
       
       /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
       @media screen and (max-width: 600px) {
@@ -224,3 +279,8 @@ span{
           max-width: 100%;
         }
       }*/
+      
+
+
+
+  
